@@ -69,16 +69,18 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:18px 56px;display:fl
 .photo-ring2{position:absolute;inset:-34px;border-radius:50%;border:1px solid rgba(123,47,255,.1);animation:ringPulse 3s ease-in-out infinite .8s;pointer-events:none;}
 .photo-ring3{position:absolute;inset:-52px;border-radius:50%;border:1px solid rgba(0,229,255,.06);animation:ringPulse 3s ease-in-out infinite 1.6s;pointer-events:none;}
 @keyframes ringPulse{0%,100%{transform:scale(1);opacity:.6}50%{transform:scale(1.03);opacity:1}}
-.photo-wrap{position:relative;width:340px;height:420px;border-radius:20px;overflow:hidden;box-shadow:0 0 0 1.5px rgba(0,229,255,.4),0 20px 60px rgba(0,0,0,.8),0 0 50px rgba(123,47,255,.3);}
-.photo-wrap img{width:100%;height:100%;object-fit:cover;object-position:center 5%;filter:contrast(1.08) saturate(1.1) brightness(1.05);}
-.photo-fade{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,0,21,.88) 0%,rgba(10,0,21,.2) 40%,transparent 70%);pointer-events:none;}
-.photo-scan{position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,229,255,.018) 2px,rgba(0,229,255,.018) 3px);pointer-events:none;border-radius:28px;}
-.c{position:absolute;width:28px;height:28px;border-color:var(--cyan);border-style:solid;z-index:4;opacity:1;filter:drop-shadow(0 0 6px var(--cyan));}
+.photo-wrap{position:relative;width:340px;height:520px;border-radius:0;overflow:visible;box-shadow:none;background:transparent;}
+.photo-wrap img{width:100%;height:100%;object-fit:contain;object-position:center bottom;filter:contrast(1.1) saturate(1.15) brightness(1.05) drop-shadow(0 0 40px rgba(123,47,255,.5)) drop-shadow(0 0 80px rgba(0,229,255,.2));position:relative;z-index:3;}
+.photo-fade{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,0,21,1) 0%,rgba(10,0,21,.4) 20%,transparent 50%);pointer-events:none;z-index:4;}
+.photo-scan{display:none;}
+.photo-platform{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:260px;height:18px;background:radial-gradient(ellipse,rgba(0,229,255,.45) 0%,rgba(123,47,255,.2) 50%,transparent 75%);filter:blur(8px);z-index:2;pointer-events:none;}
+.photo-arc{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:300px;height:1px;background:linear-gradient(90deg,transparent,rgba(0,229,255,.6),rgba(123,47,255,.8),rgba(0,229,255,.6),transparent);z-index:5;}
+.c{display:none;}
 .c.tl{top:12px;left:12px;border-width:2px 0 0 2px;border-radius:4px 0 0 0}
 .c.tr{top:12px;right:12px;border-width:2px 2px 0 0;border-radius:0 4px 0 0}
 .c.bl{bottom:12px;left:12px;border-width:0 0 2px 2px;border-radius:0 0 0 4px}
 .c.br{bottom:12px;right:12px;border-width:0 2px 2px 0;border-radius:0 0 4px 0}
-.photo-namestrip{position:absolute;bottom:0;left:0;right:0;padding:22px 24px 20px;z-index:5;background:linear-gradient(to top,rgba(10,0,21,1) 0%,rgba(10,0,21,.7) 60%,transparent 100%);}
+.photo-namestrip{display:none;}
 .photo-strip-role{font-size:9px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--cyan);margin-bottom:4px;}
 .photo-strip-name{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:.06em;background:linear-gradient(135deg,#fff,var(--violet3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .float-card{position:absolute;padding:12px 16px;border-radius:14px;background:rgba(10,0,21,.82);border:1px solid rgba(123,47,255,.3);backdrop-filter:blur(16px);box-shadow:0 8px 28px rgba(0,0,0,.45),0 0 20px rgba(123,47,255,.12);font-size:11px;font-weight:600;white-space:nowrap;z-index:6;}
@@ -274,9 +276,10 @@ footer{background:rgba(0,0,0,.52);border-top:1px solid var(--border);padding:24p
         <div class="photo-ring2"></div>
         <div class="photo-ring3"></div>
         <div class="photo-wrap">
-      <img src="profile.jpg" alt="Santhosh">
-          <div class="photo-fade"></div>
-          <div class="photo-scan"></div>
+      <img src="profile1.png" alt="Santhosh">
+         <div class="photo-fade"></div>
+         <div class="photo-platform"></div>
+         <div class="photo-arc"></div>
           <div class="c tl"></div><div class="c tr"></div><div class="c bl"></div><div class="c br"></div>
           <div class="photo-namestrip">
             <div class="photo-strip-role">Video Editor · Tamil Nadu</div>
