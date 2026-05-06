@@ -121,7 +121,7 @@ section{padding:92px 56px;position:relative;z-index:10}
 .reel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px;max-height:500px;}
 .reel-card{position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(123,47,255,.2);transition:transform .4s cubic-bezier(.23,1,.32,1),box-shadow .4s;cursor:pointer;background:#0D0022}
 .reel-card:hover{transform:translateY(-8px) scale(1.015);box-shadow:0 28px 70px rgba(0,0,0,.6),0 0 32px rgba(123,47,255,.2);border-color:rgba(0,229,255,.36)}
-.reel-inner{position:relative;width:100%;height:420px;overflow:hidden}
+.reel-inner{position:relative;width:100%;height:520px;overflow:hidden}
 .reel-inner video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .reel-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:13px;background:linear-gradient(160deg,#0D0033 0%,#001A30 100%)}
 .rg-a{position:absolute;width:65%;height:65%;border-radius:50%;top:-10%;right:-10%;filter:blur(46px)}
@@ -307,10 +307,15 @@ footer{background:rgba(0,0,0,.52);border-top:1px solid var(--border);padding:24p
 
   <div class="reel-card reveal">
     <div class="reel-inner">
-     <video muted loop playsinline controls
+      <video muted loop playsinline controls
         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
-        <source src="https://res.cloudinary.com/djdkyoeyx/video/upload/q_auto/f_auto/v1778062905/Subashh_Sample_or338v.mp4" type="video/mp4">
+        <source src="https://res.cloudinary.com/djdkyoeyx/video/upload/v1778062905/Subashh_Sample_or338v.mp4" type="video/mp4">
       </video>
+    </div>
+    <div class="reel-overlay" style="opacity:1;background:linear-gradient(to top,rgba(10,0,21,.95) 0%,transparent 40%);pointer-events:none">
+      <div class="reel-tag">Information · 2026</div>
+      <div class="reel-title">Weight Gain</div>
+      <div class="reel-meta">Edited by Santhosh</div>
     </div>
   </div>
 
@@ -318,17 +323,27 @@ footer{background:rgba(0,0,0,.52);border-top:1px solid var(--border);padding:24p
     <div class="reel-inner">
       <video muted loop playsinline controls
         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
-        <source src="https://res.cloudinary.com/djdkyoeyx/video/upload/q_auto/f_auto/v1778062995/Jacket_Anti-Tan_bdx6xl.mp4" type="video/mp4">
+        <source src="https://res.cloudinary.com/djdkyoeyx/video/upload/v1778062995/Jacket_Anti-Tan_bdx6xl.mp4" type="video/mp4">
       </video>
+    </div>
+    <div class="reel-overlay" style="opacity:1;background:linear-gradient(to top,rgba(10,0,21,.95) 0%,transparent 40%);pointer-events:none">
+      <div class="reel-tag">Commercial · 2026</div>
+      <div class="reel-title">Anti-Tan Jacket</div>
+      <div class="reel-meta">Edited by Santhosh</div>
     </div>
   </div>
 
   <div class="reel-card reveal reveal-d2">
     <div class="reel-inner">
-     <video muted loop playsinline controls
+      <video muted loop playsinline controls
         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
-        <source src="https://res.cloudinary.com/djdkyoeyx/video/upload/q_auto/f_auto/v1778063051/Shell_Story_zngp1d.mp4" type="video/mp4">
+        <source src="https://res.cloudinary.com/djdkyoeyx/video/upload/v1778063051/Shell_Story_zngp1d.mp4" type="video/mp4">
       </video>
+    </div>
+    <div class="reel-overlay" style="opacity:1;background:linear-gradient(to top,rgba(10,0,21,.95) 0%,transparent 40%);pointer-events:none">
+      <div class="reel-tag">Brand · 2025</div>
+      <div class="reel-title">Shell Story</div>
+      <div class="reel-meta">Edited by Santhosh</div>
     </div>
   </div>
 
