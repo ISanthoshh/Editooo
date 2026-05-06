@@ -118,10 +118,10 @@ section{padding:92px 56px;position:relative;z-index:10}
 .s-title .g2{background:linear-gradient(135deg,var(--cyan),var(--violet2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .s-sub{font-size:13.5px;font-weight:400;color:rgba(232,224,255,.43);line-height:1.88;max-width:490px}
 .work-section{background:linear-gradient(180deg,rgba(123,47,255,.025),transparent)}
-.reel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px;max-height:500px;}
+.reel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px;}
 .reel-card{position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(123,47,255,.2);transition:transform .4s cubic-bezier(.23,1,.32,1),box-shadow .4s;cursor:pointer;background:#0D0022}
 .reel-card:hover{transform:translateY(-8px) scale(1.015);box-shadow:0 28px 70px rgba(0,0,0,.6),0 0 32px rgba(123,47,255,.2);border-color:rgba(0,229,255,.36)}
-.reel-inner{position:relative;width:100%;height:520px;overflow:hidden}
+.reel-inner{position:relative;width:100%;height:70vh;overflow:hidden}
 .reel-inner video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .reel-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:13px;background:linear-gradient(160deg,#0D0033 0%,#001A30 100%)}
 .rg-a{position:absolute;width:65%;height:65%;border-radius:50%;top:-10%;right:-10%;filter:blur(46px)}
@@ -307,8 +307,8 @@ footer{background:rgba(0,0,0,.52);border-top:1px solid var(--border);padding:24p
 
   <div class="reel-card reveal">
     <div class="reel-inner">
-      <video muted loop playsinline controls
-        style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+     <video muted loop playsinline controls preload="metadata"
+        style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000">
         <source src="https://res.cloudinary.com/djdkyoeyx/video/upload/v1778062905/Subashh_Sample_or338v.mp4" type="video/mp4">
       </video>
     </div>
@@ -321,8 +321,8 @@ footer{background:rgba(0,0,0,.52);border-top:1px solid var(--border);padding:24p
 
   <div class="reel-card reveal reveal-d1">
     <div class="reel-inner">
-      <video muted loop playsinline controls
-        style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+     <video muted loop playsinline controls preload="metadata"
+        style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000">
         <source src="https://res.cloudinary.com/djdkyoeyx/video/upload/v1778062995/Jacket_Anti-Tan_bdx6xl.mp4" type="video/mp4">
       </video>
     </div>
@@ -335,8 +335,8 @@ footer{background:rgba(0,0,0,.52);border-top:1px solid var(--border);padding:24p
 
   <div class="reel-card reveal reveal-d2">
     <div class="reel-inner">
-      <video muted loop playsinline controls
-        style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+     <video muted loop playsinline controls preload="metadata"
+        style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#000">
         <source src="https://res.cloudinary.com/djdkyoeyx/video/upload/v1778063051/Shell_Story_zngp1d.mp4" type="video/mp4">
       </video>
     </div>
